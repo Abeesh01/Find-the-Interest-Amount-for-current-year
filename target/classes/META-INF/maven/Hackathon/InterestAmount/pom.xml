@@ -27,12 +27,13 @@
 
 					<configuration>
 
-						<properties>
+				 <!--	<properties>
 							<property>
 								<name>dataproviderthreadcount</name>
 								<value>20</value>
 							</property>
-						</properties>
+						</properties> -->
+						 
 
 						<suiteXmlFiles>
 							<suiteXmlFile>
