@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-	features = "src/test/resources/features/LoanCalculatorChrome.feature", 
+	features = "src/test/resources/features/LoanCalculatorEdge.feature", 
 	glue = "stepDefinitions", 
 	plugin = { 
         		"pretty",
