@@ -92,6 +92,8 @@ public class DriverSetup {
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("--disable-extensions");
+                edgeOptions.addArguments("--headless"); // Optional: Run in headless mode
+                edgeOptions.addArguments("--disable-gpu"); // Optional: Disable GPU acceleration
                 driver = new EdgeDriver(edgeOptions);
                 break;
 
