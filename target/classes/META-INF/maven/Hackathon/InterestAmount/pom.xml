@@ -35,17 +35,17 @@
 						</properties> -->
 						 
 
-				<!-- 		<suiteXmlFiles>
+				 		<suiteXmlFiles>
 							<suiteXmlFile>
 								cucumberTestng.xml
 							</suiteXmlFile>
-						</suiteXmlFiles> -->
+						</suiteXmlFiles> 
 						
-						<suiteXmlFiles>
+					<!--	<suiteXmlFiles>
 							<suiteXmlFile>
 									testng.xml
 							</suiteXmlFile>
-						</suiteXmlFiles>
+						</suiteXmlFiles> -->
 
 					</configuration>
 
