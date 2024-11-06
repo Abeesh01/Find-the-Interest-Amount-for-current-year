@@ -1,127 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T01:47:31 IST" name="LoanCalculatorSuite" finished-at="2024-11-06T01:52:02 IST" duration-ms="271000">
+  <suite started-at="2024-11-06T10:26:14 IST" name="Suite" finished-at="2024-11-06T10:26:56 IST" duration-ms="42129">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-11-06T01:47:31 IST" name="Tests" finished-at="2024-11-06T01:52:02 IST" duration-ms="271000">
-      <class name="runner.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:47:31 IST" name="setUpClass" finished-at="2024-11-06T01:47:32 IST" duration-ms="793" status="PASS">
+    <test started-at="2024-11-06T10:26:14 IST" name="ChromeTest" finished-at="2024-11-06T10:26:56 IST" duration-ms="42129">
+      <class name="allLoanCalculators.LoanCalculator">
+        <test-method signature="testCarLoanCalculation(java.lang.String)[pri:1, instance:allLoanCalculators.LoanCalculator@33aeca0b]" started-at="2024-11-06T10:26:14 IST" name="testCarLoanCalculation" finished-at="2024-11-06T10:26:39 IST" duration-ms="25135" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6d4df1d2]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:47:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:48:29 IST" duration-ms="56928" status="PASS">
+        </test-method> <!-- testCarLoanCalculation -->
+        <test-method signature="testHomeLoanEmiCalculator(java.lang.String)[pri:2, instance:allLoanCalculators.LoanCalculator@33aeca0b]" started-at="2024-11-06T10:26:39 IST" name="testHomeLoanEmiCalculator" finished-at="2024-11-06T10:26:42 IST" depends-on-methods="allLoanCalculators.LoanCalculator.testCarLoanCalculation" duration-ms="3321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Calculate_Car_Loan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Chrome Browser"]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:48:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:48:32 IST" duration-ms="3495" status="PASS">
+        </test-method> <!-- testHomeLoanEmiCalculator -->
+        <test-method signature="testEmiCalculator(java.lang.String)[pri:3, instance:allLoanCalculators.LoanCalculator@33aeca0b]" started-at="2024-11-06T10:26:42 IST" name="testEmiCalculator" finished-at="2024-11-06T10:26:56 IST" depends-on-methods="allLoanCalculators.LoanCalculator.testHomeLoanEmiCalculator" duration-ms="13618" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Calculate_Home_Loan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Chrome Browser"]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:48:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:48:51 IST" duration-ms="18439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Testing EMI Calculator"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Chrome Browser"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:48:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:51:37 IST" duration-ms="165915" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Calculate_Car_Loan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Edge Browser"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:51:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:51:40 IST" duration-ms="3321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Calculate_Home_Loan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Edge Browser"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:51:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-06T01:52:00 IST" duration-ms="19741" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Testing EMI Calculator"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Loan Calculator Testing In Edge Browser"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@39de3d36]" started-at="2024-11-06T01:52:00 IST" name="tearDownClass" finished-at="2024-11-06T01:52:02 IST" duration-ms="2307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.RunCucumberTest -->
-    </test> <!-- Tests -->
-  </suite> <!-- LoanCalculatorSuite -->
+        </test-method> <!-- testEmiCalculator -->
+      </class> <!-- allLoanCalculators.LoanCalculator -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>
