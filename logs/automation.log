@@ -70,3 +70,75 @@
 2024-11-06 10:26:52 INFO  DriverSetup:209 - Verified loan interest rate slider value using chrome browser.
 2024-11-06 10:26:53 INFO  DriverSetup:138 - Dragged LoanFeesSlider using chrome browser.
 2024-11-06 10:26:53 ERROR DriverSetup:211 - Assertion failed for loan fees slider using chrome browser: expected [51,500] but found [50,500]
+2024-11-06 10:48:57 INFO  DriverSetup:65 - ----------------------------------------------------------------
+2024-11-06 10:48:57 INFO  DriverSetup:66 - Successfully opened the chrome browser.
+2024-11-06 10:48:57 INFO  DriverSetup:69 - Navigated to Car Loan section using chrome browser.
+2024-11-06 10:48:58 INFO  DriverSetup:110 - Entered loan amount: 1500000 using chrome browser.
+2024-11-06 10:48:58 INFO  DriverSetup:80 - Entered loan amount using chrome browser.
+2024-11-06 10:48:59 INFO  DriverSetup:135 - Entered interest rate: 9.5 using chrome browser.
+2024-11-06 10:48:59 INFO  DriverSetup:83 - Entered interest rate using chrome browser.
+2024-11-06 10:48:59 INFO  DriverSetup:160 - Entered loan tenure: 1 using chrome browser.
+2024-11-06 10:48:59 INFO  DriverSetup:86 - Entered loan tenure using chrome browser.
+2024-11-06 10:48:59 INFO  DriverSetup:173 - Scrolled down to view yearly payment details using chrome browser.
+2024-11-06 10:49:01 INFO  DriverSetup:187 - Clicked on year: 2024 using chrome browser.
+2024-11-06 10:49:04 INFO  DriverSetup:187 - Clicked on year: 2025 using chrome browser.
+2024-11-06 10:49:04 INFO  DriverSetup:216 - Extracted yearly data using chrome browser.
+2024-11-06 10:49:05 INFO  DriverSetup:242 - Extracted monthly data using chrome browser.
+2024-11-06 10:49:05 INFO  DriverSetup:292 - Filtered data successfully using chrome browser.
+2024-11-06 10:49:05 INFO  DriverSetup:322 - Printed filtered data successfully in chrome.
+2024-11-06 10:49:05 INFO  DriverSetup:323 - ----------------------------------------------------------------
+2024-11-06 10:49:05 INFO  DriverSetup:80 - Clicked on HomeLoan logo using chrome browser.
+2024-11-06 10:49:06 INFO  DriverSetup:90 - Clicked on dropdown using chrome browser.
+2024-11-06 10:49:06 INFO  DriverSetup:97 - Clicked on homeLoanOption using chrome browser.
+2024-11-06 10:49:07 INFO  DriverSetup:134 - Entered home loan amount: 5000000 using chrome browser.
+2024-11-06 10:49:07 INFO  DriverSetup:109 - Entered home loan amount using chrome browser.
+2024-11-06 10:49:07 INFO  DriverSetup:152 - Entered home loan interest: 9.5 using chrome browser.
+2024-11-06 10:49:07 INFO  DriverSetup:112 - Entered home loan interest rate using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:175 - Entered home loan tenure: 5 using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:115 - Entered home loan tenure using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:193 - Scrolled to yearly payment details using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:222 - Extracted yearly table data using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:263 - Stored yearly data in Excel sheet using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:264 - ----------------------------------------------------------------
+2024-11-06 10:49:08 INFO  DriverSetup:126 - Clicked on HomeLoan_logo using chrome browser.
+2024-11-06 10:49:08 INFO  DriverSetup:126 - Clicked on dropdown using chrome browser.
+2024-11-06 10:49:09 INFO  DriverSetup:126 - Clicked on LoanCalculatorOption using chrome browser.
+2024-11-06 10:49:09 INFO  DriverSetup:126 - Clicked on EMI Calculator using chrome browser.
+2024-11-06 10:49:09 INFO  DriverSetup:138 - Dragged LoanAmountSlider using chrome browser.
+2024-11-06 10:49:10 INFO  DriverSetup:209 - Verified loan amount slider value using chrome browser.
+2024-11-06 10:49:10 INFO  DriverSetup:138 - Dragged LoanInterestSlider using chrome browser.
+2024-11-06 10:49:10 INFO  DriverSetup:209 - Verified loan interest rate slider value using chrome browser.
+2024-11-06 10:49:10 INFO  DriverSetup:126 - Clicked on loanYearButton using chrome browser.
+2024-11-06 10:49:11 INFO  DriverSetup:138 - Dragged LoanTenureSlider using chrome browser.
+2024-11-06 10:49:11 INFO  DriverSetup:126 - Clicked on loanYearButton using chrome browser.
+2024-11-06 10:49:11 INFO  DriverSetup:209 - Verified loan tenure slider (yearly) value using chrome browser.
+2024-11-06 10:49:11 INFO  DriverSetup:126 - Clicked on loanMonthsButton using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:138 - Dragged LoanTenureSlider using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:126 - Clicked on loanMonthsButton using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:209 - Verified loan tenure slider (monthly) value using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:138 - Dragged LoanFeesSlider using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:209 - Verified loan fees slider value using chrome browser.
+2024-11-06 10:49:12 INFO  DriverSetup:126 - Clicked on Loan Amount Calculator using chrome browser.
+2024-11-06 10:49:13 INFO  DriverSetup:138 - Dragged LoanEmiSlider using chrome browser.
+2024-11-06 10:49:13 INFO  DriverSetup:209 - Verified loan EMI slider value using chrome browser.
+2024-11-06 10:49:14 INFO  DriverSetup:138 - Dragged LoanInterestSlider using chrome browser.
+2024-11-06 10:49:14 ERROR DriverSetup:211 - Assertion failed for loan interest rate slider using chrome browser: expected [10.5] but found [10.75]
+2024-11-06 10:49:14 INFO  DriverSetup:126 - Clicked on loanMonthsButton using chrome browser.
+2024-11-06 10:49:14 INFO  DriverSetup:138 - Dragged LoanTenureSlider using chrome browser.
+2024-11-06 10:49:14 INFO  DriverSetup:126 - Clicked on loanMonthsButton using chrome browser.
+2024-11-06 10:49:14 INFO  DriverSetup:209 - Verified loan tenure slider (monthly) value using chrome browser.
+2024-11-06 10:49:14 INFO  DriverSetup:126 - Clicked on loanYearButton using chrome browser.
+2024-11-06 10:49:15 INFO  DriverSetup:138 - Dragged LoanTenureSlider using chrome browser.
+2024-11-06 10:49:15 INFO  DriverSetup:126 - Clicked on loanYearButton using chrome browser.
+2024-11-06 10:49:15 INFO  DriverSetup:209 - Verified loan tenure slider (yearly) value using chrome browser.
+2024-11-06 10:49:16 INFO  DriverSetup:138 - Dragged LoanFeesSlider using chrome browser.
+2024-11-06 10:49:16 ERROR DriverSetup:211 - Assertion failed for loan fees slider using chrome browser: expected [50,500] but found [51,500]
+2024-11-06 10:49:16 INFO  DriverSetup:126 - Clicked on Loan Tenure Calculator using chrome browser.
+2024-11-06 10:49:16 INFO  DriverSetup:138 - Dragged LoanAmountSlider using chrome browser.
+2024-11-06 10:49:16 ERROR DriverSetup:211 - Assertion failed for loan amount slider using chrome browser: expected [1,19,00,000] but found [1,18,00,000]
+2024-11-06 10:49:17 INFO  DriverSetup:138 - Dragged LoanEmiSlider using chrome browser.
+2024-11-06 10:49:17 ERROR DriverSetup:211 - Assertion failed for loan EMI slider using chrome browser: expected [1,13,326.48] but found [1,10,150.80]
+2024-11-06 10:49:18 INFO  DriverSetup:138 - Dragged LoanInterestSlider using chrome browser.
+2024-11-06 10:49:18 INFO  DriverSetup:209 - Verified loan interest rate slider value using chrome browser.
+2024-11-06 10:49:18 INFO  DriverSetup:138 - Dragged LoanFeesSlider using chrome browser.
+2024-11-06 10:49:18 ERROR DriverSetup:211 - Assertion failed for loan fees slider using chrome browser: expected [51,500] but found [50,500]
