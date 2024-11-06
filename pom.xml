@@ -27,21 +27,21 @@
 
 					<configuration>
 
-						<!--	<properties>
+				 <!--	<properties>
 							<property>
 								<name>dataproviderthreadcount</name>
 								<value>20</value>
 							</property>
 						</properties> -->
+						 
 
-
-						<suiteXmlFiles>
+				 		<suiteXmlFiles>
 							<suiteXmlFile>
 								cucumberTestng.xml
 							</suiteXmlFile>
-						</suiteXmlFiles>
-
-						<!--	<suiteXmlFiles>
+						</suiteXmlFiles> 
+						
+					<!--	<suiteXmlFiles>
 							<suiteXmlFile>
 									testng.xml
 							</suiteXmlFile>
@@ -60,22 +60,12 @@
 
 	<dependencies>
 
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.25.0</version>
 		</dependency>
-
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-edge-driver</artifactId>
-			<version>4.26.0</version>
-		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
@@ -126,32 +116,28 @@
 			<version>5.3.0</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.14.0</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.24.1</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>2.24.1</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-slf4j-impl</artifactId>
