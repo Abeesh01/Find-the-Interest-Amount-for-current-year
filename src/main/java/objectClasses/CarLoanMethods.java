@@ -247,107 +247,57 @@ public class CarLoanMethods
 	return allvalues;
     }
 
-//    public static String[][] filterData(String[][] yearlyData, String[][] monthlyData)
-//    {
-//	// Initialize an array to store the yearly values to be filtered
-//	String[] valuez = new String[2];
-//	try {
-//	    // Extract the relevant yearly data
-//	    for (int i = 0; i < Integer.parseInt(carLoanMethodsInputDetails.CarLoanTenureInput()) + 1; i++) {
-//		valuez[i] = yearlyData[i][1];
-//	    }
-//
-//	    // Initialize a list to store the filtered monthly data
-//	    List<String[]> filteredValues = new ArrayList<>();
-//
-//	    // Iterate through the monthly data to filter out matching yearly values
-//	    for (int i = 0; i < monthlyData.length; i++) {
-//		boolean matchFound = false;
-//		for (int j = 1; j < 3; j++) {
-//		    for (int k = 0; k < 2; k++) {
-//			if (monthlyData[i][j].contentEquals(valuez[k])) {
-//			    matchFound = true;
-//			    break;
-//			}
-//		    }
-//		}
-//		if (!matchFound) {
-//		    filteredValues.add(monthlyData[i]);
-//		}
-//	    }
-//
-//	    // Convert the filtered list back to a 2D array
-//	    String[][] newAllValues = new String[filteredValues.size()][5];
-//	    for (int i = 0; i < filteredValues.size(); i++) {
-//		newAllValues[i] = filteredValues.get(i);
-//	    }
-//
-//	    // Add row numbers to the filtered data
-//	    int kj = 0;
-//	    for (int i = 0; i < newAllValues.length; i++) {
-//		newAllValues[kj++][0] = String.valueOf(i + 1);
-//	    }
-//
-//	    // Log the action
-//	    DriverSetup.logger.info("Filtered data successfully using " + browser + " browser.");
-//	    return newAllValues;
-//	} catch (NumberFormatException | IOException e) {
-//	    // Log any errors that occur
-//	    DriverSetup.logger.error("Error filtering data using " + browser + " browser.", e);
-//	}
-//	return new String[0][0];
-//    }
-    
-    public static String[][] filterData(String[][] yearlyData, String[][] monthlyData) throws IOException {
-	    // Determine the size based on CarLoanTenureInput
-	    int tenure = Integer.parseInt(carLoanMethodsInputDetails.CarLoanTenureInput()) + 1;
-	    String[] valuez = new String[tenure];
-	    try {
-	        // Extract the relevant yearly data
-	        for (int i = 0; i < tenure; i++) {
-	            valuez[i] = yearlyData[i][1];
-	        }
-
-	        // Initialize a list to store the filtered monthly data
-	        List<String[]> filteredValues = new ArrayList<>();
-
-	        // Iterate through the monthly data to filter out matching yearly values
-	        for (int i = 0; i < monthlyData.length; i++) {
-	            boolean matchFound = false;
-	            for (int j = 1; j < 3; j++) {
-	                for (int k = 0; k < tenure; k++) {
-	                    if (valuez[k] != null && monthlyData[i][j].contentEquals(valuez[k])) {
-	                        matchFound = true;
-	                        break;
-	                    }
-	                }
-	            }
-	            if (!matchFound) {
-	                filteredValues.add(monthlyData[i]);
-	            }
-	        }
-
-	        // Convert the filtered list back to a 2D array
-	        String[][] newAllValues = new String[filteredValues.size()][5];
-	        for (int i = 0; i < filteredValues.size(); i++) {
-	            newAllValues[i] = filteredValues.get(i);
-	        }
-
-	        // Add row numbers to the filtered data
-	        for (int i = 0; i < newAllValues.length; i++) {
-	            newAllValues[i][0] = String.valueOf(i + 1);
-	        }
-
-	        // Log the action
-	        DriverSetup.logger.info("Filtered data successfully using " + browser + " browser.");
-	        return newAllValues;
-	    } catch (NumberFormatException e) {
-	        // Log any errors that occur
-	        DriverSetup.logger.error("Error filtering data using " + browser + " browser.", e);
+    public static String[][] filterData(String[][] yearlyData, String[][] monthlyData) throws IOException
+    {
+	// Determine the size based on CarLoanTenureInput
+	int tenure = Integer.parseInt(carLoanMethodsInputDetails.CarLoanTenureInput()) + 1;
+	String[] valuez = new String[tenure];
+	try {
+	    // Extract the relevant yearly data
+	    for (int i = 0; i < tenure; i++) 
+	    {
+		valuez[i] = yearlyData[i][1];
 	    }
-	    return new String[0][0];
-	}
 
+	    // Initialize a list to store the filtered monthly data
+	    List<String[]> filteredValues = new ArrayList<>();
+
+	    // Iterate through the monthly data to filter out matching yearly values
+	    for (int i = 0; i < monthlyData.length; i++) {
+		boolean matchFound = false;
+		for (int j = 1; j < 3; j++) {
+		    for (int k = 0; k < tenure; k++) {
+			if (valuez[k] != null && monthlyData[i][j].contentEquals(valuez[k])) {
+			    matchFound = true;
+			    break;
+			}
+		    }
+		}
+		if (!matchFound) {
+		    filteredValues.add(monthlyData[i]);
+		}
+	    }
+
+	    // Convert the filtered list back to a 2D array
+	    String[][] newAllValues = new String[filteredValues.size()][5];
+	    for (int i = 0; i < filteredValues.size(); i++) {
+		newAllValues[i] = filteredValues.get(i);
+	    }
+
+	    // Add row numbers to the filtered data
+	    for (int i = 0; i < newAllValues.length; i++) {
+		newAllValues[i][0] = String.valueOf(i + 1);
+	    }
+
+	    // Log the action
+	    DriverSetup.logger.info("Filtered data successfully using " + browser + " browser.");
+	    return newAllValues;
+	} catch (NumberFormatException e) {
+	    // Log any errors that occur
+	    DriverSetup.logger.error("Error filtering data using " + browser + " browser.", e);
+	}
+	return new String[0][0];
+    }
 
     public static void printFilteredData(String[][] filteredData)
     {
