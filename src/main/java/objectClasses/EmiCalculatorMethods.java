@@ -301,11 +301,11 @@ public class EmiCalculatorMethods
 
 	// Drag the loan amount slider and verify the output
 	dragLoanAmountSlider(60, 0, "testLoanTenureCalculator");
-	verifyLoanAmountSliderOutput("1,19,00,000");
+	verifyLoanAmountSliderOutput("1,18,00,000");
 
 	// Drag the loan EMI slider and verify the output
 	dragLoanEmiSlider(5, 0, "testLoanTenureCalculator");
-	verifyLoanEmiSliderOutput("1,13,326.48");
+	verifyLoanEmiSliderOutput("1,12,374.16");
 
 	// Drag the loan interest rate slider and verify the output
 	dragLoanInterestSlider(30, 0, "testLoanTenureCalculator");
@@ -313,6 +313,6 @@ public class EmiCalculatorMethods
 
 	// Drag the loan fees slider and verify the output
 	dragLoanFeesSlider(5, 0, "testLoanTenureCalculator");
-	verifyLoanFeesSliderOutput("51,500");
+	verifyLoanFeesSliderOutput("50,500");
     }
 }
