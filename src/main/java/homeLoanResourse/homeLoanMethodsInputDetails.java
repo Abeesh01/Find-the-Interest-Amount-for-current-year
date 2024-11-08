@@ -9,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class homeLoanMethodsInputDetails 
 {
+        // Method to read the home loan amount from the Excel file
 	public static String HomeLoanAmountInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/HomeLoanMethodsInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);
@@ -21,6 +22,7 @@ public class homeLoanMethodsInputDetails
 		return String.valueOf(value1);
 	}
 
+	// Method to read the home loan interest rate from the Excel file
 	public static String HomeLoanInterestRateInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/HomeLoanMethodsInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);
@@ -33,6 +35,7 @@ public class homeLoanMethodsInputDetails
 		return String.valueOf(value2);
 	}
 
+	// Method to read the home loan tenure from the Excel file
 	public static String HomeLoanTenureInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/HomeLoanMethodsInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);

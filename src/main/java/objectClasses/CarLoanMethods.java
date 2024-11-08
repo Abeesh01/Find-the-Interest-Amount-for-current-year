@@ -72,7 +72,7 @@ public class CarLoanMethods
 	}
     }
 
-    // Method to enter loan details
+    // Method to enter car loan details
     public static void enterLoanDetails()
     {
 	try {
@@ -195,7 +195,7 @@ public class CarLoanMethods
     public static String[][] extractYearlyData()
     {
 	// Initialize a 2D array to store the yearly data
-	String[][] values = new String[yearlyPayment.size()][6];
+	String[][] yearlyValues = new String[yearlyPayment.size()][6];
 	int row = 0;
 
 	try {
@@ -208,7 +208,7 @@ public class CarLoanMethods
 
 		// Store the cleaned data in the 2D array
 		for (int col = 0; col < splitData.length; col++) {
-		    values[row][col] = splitData[col];
+		    yearlyValues[row][col] = splitData[col];
 		}
 		row++;
 	    }
@@ -218,20 +218,20 @@ public class CarLoanMethods
 	    // Log any errors that occur
 	    DriverSetup.logger.error("Error extracting yearly data using " + browser + " browser.", e);
 	}
-	return values;
+	return yearlyValues;
     }
 
     public static String[][] extractMonthlyData()
     {
 	// Calculate the number of rows for the monthly data
-	int size = monthlyPayment.size() / 4;
+	int monthlyPaymentSize = monthlyPayment.size() / 4;
 	// Initialize a 2D array to store the monthly data
-	String[][] allvalues = new String[size][5];
+	String[][] allvalues = new String[monthlyPaymentSize][5];
 	int z = 0;
 
 	try {
 	    // Iterate through each row in the monthly payment details
-	    for (int i = 0; i < size; i++) {
+	    for (int i = 0; i < monthlyPaymentSize; i++) {
 		for (int j = 1; j < 5; j++) {
 		    // Get the text from the element, clean it, and store it in the 2D array
 		    String cleanedText = monthlyPayment.get(z++).getText().replaceAll("[₹]", "").trim();
@@ -251,12 +251,13 @@ public class CarLoanMethods
     {
 	// Determine the size based on CarLoanTenureInput
 	int tenure = Integer.parseInt(carLoanMethodsInputDetails.CarLoanTenureInput()) + 1;
-	String[] valuez = new String[tenure];
+	
+	String[] yearlyPrincipleAmount = new String[tenure];
 	try {
 	    // Extract the relevant yearly data
 	    for (int i = 0; i < tenure; i++) 
 	    {
-		valuez[i] = yearlyData[i][1];
+		yearlyPrincipleAmount[i] = yearlyData[i][1];
 	    }
 
 	    // Initialize a list to store the filtered monthly data
@@ -267,7 +268,7 @@ public class CarLoanMethods
 		boolean matchFound = false;
 		for (int j = 1; j < 3; j++) {
 		    for (int k = 0; k < tenure; k++) {
-			if (valuez[k] != null && monthlyData[i][j].contentEquals(valuez[k])) {
+			if (yearlyPrincipleAmount[k] != null && monthlyData[i][j].contentEquals(yearlyPrincipleAmount[k])) {
 			    matchFound = true;
 			    break;
 			}

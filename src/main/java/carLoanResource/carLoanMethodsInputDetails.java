@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class carLoanMethodsInputDetails {
-
+       //Input data of car loan amount from excel file
 	public static String CarLoanAmountInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/CarLoanMethodInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);
@@ -20,7 +20,7 @@ public class carLoanMethodsInputDetails {
 		
 		return String.valueOf(value1);
 	}
-
+       //Input data of car loan Intrest Rate from excel file
 	public static String CarLoanInterestRateInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/CarLoanMethodInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);
@@ -31,7 +31,7 @@ public class carLoanMethodsInputDetails {
 		wbook.close();
 		return String.valueOf(value2);
 	}
-
+       //Input data of car loan Tenure from excel file
 	public static String CarLoanTenureInput() throws IOException {
 		String fileLocation = "./ExcelInputFiles/CarLoanMethodInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);
@@ -42,7 +42,7 @@ public class carLoanMethodsInputDetails {
 		wbook.close();
 		return String.valueOf(value3);
 	}
-
+      //Input data for month/year to be printed in the output
 	public static int MonthToBePrintered() throws IOException {
 		String fileLocation = "./ExcelInputFiles/CarLoanMethodInputs.xlsx";
 		XSSFWorkbook wbook = new XSSFWorkbook(fileLocation);

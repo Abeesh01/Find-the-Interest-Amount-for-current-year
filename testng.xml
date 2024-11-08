@@ -4,6 +4,10 @@
 <!-- TestNG Suite Configuration -->
 <suite name="Suite">
 
+	<listeners>
+		<listener class-name="ExtentReportForTestNG.ExtentReportManager" />
+	</listeners>
+	
 	<!-- Test Configuration for Chrome Browser -->
 	<test name="ChromeTest">
 		<!-- Parameter to specify the browser type -->
@@ -14,7 +18,7 @@
 		</classes>
 	</test>
 	<!-- End of ChromeTest -->
-
+	
 	
 
 </suite>

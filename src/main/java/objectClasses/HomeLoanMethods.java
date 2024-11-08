@@ -201,7 +201,7 @@ public class HomeLoanMethods
     public static String[][] extractYearlyTableData()
     {
 	// Initialize a 2D array to store the yearly table data
-	String[][] values = new String[paymentScheduleRows.size()][7];
+	String[][] yearlyValues = new String[paymentScheduleRows.size()][7];
 	int row = 0;
 
 	try {
@@ -214,7 +214,7 @@ public class HomeLoanMethods
 
 		// Store the cleaned data in the 2D array
 		for (int col = 0; col < splitData.length; col++) {
-		    values[row][col] = splitData[col];
+		    yearlyValues[row][col] = splitData[col];
 		}
 		row++;
 	    }
@@ -226,7 +226,7 @@ public class HomeLoanMethods
 		    .error("Error extracting yearly table data using " + browser + " browser: " + e.getMessage(), e);
 	}
 
-	return values;
+	return yearlyValues;
     }
 
     public static void storingTheValuesInExcelSheet(String[][] yearlyData) throws IOException
