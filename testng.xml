@@ -7,7 +7,7 @@
 	<listeners>
 		<listener class-name="ExtentReportForTestNG.ExtentReportManager" />
 	</listeners>
-	
+
 	<!-- Test Configuration for Chrome Browser -->
 	<test name="ChromeTest">
 		<!-- Parameter to specify the browser type -->
@@ -18,8 +18,17 @@
 		</classes>
 	</test>
 	<!-- End of ChromeTest -->
-	
-	
+
+	<!-- Test Configuration for Edge Browser -->
+	<test name="EdgeTest">
+		<!-- Parameter to specify the browser type -->
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<!-- Specify the class containing the test methods -->
+			<class name="allLoanCalculators.LoanCalculator" />
+		</classes>
+	</test>
+	<!-- End of EdgeTest -->
 
 </suite>
 <!-- End of Suite -->
